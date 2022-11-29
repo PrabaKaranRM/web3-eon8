@@ -20,7 +20,7 @@ ol,
 	right: 30px;
 	color: #fff;
 
-	border-radius: 100px;
+	border-radius: 100%;
 	z-index: 100;
 	font-family: Arial;
 	font-size: 17px;
@@ -29,10 +29,7 @@ ol,
 	transition:all 0.3s ease-out;
 }
 
-.float-button:hover {
-	 background-color: #25D366;
-	  color: #fff;
-}
+
 
 .fa-whatsapp {
 	font-size: 20px !important;
@@ -57,7 +54,7 @@ ol,
 
 	.float-button {
 		bottom: 15px;
-		right: 15px;
+		right: 10%;
 		width: 20px;
 		border-radius: 50px;
 	}
@@ -112,6 +109,32 @@ input {
 	src: url(../fonts/proxon.woff), url(../fonts/proxon.woff2);
 }
 
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
+  }
+  
+  body {
+	
+	background-color: #000;
+  } 
+
+ .imgsec{
+
+	
+		
+	}
+
+	.spider{
+		display: none;
+	}
+  
+  
+  
+  
 
 .tx-three{
 	font-family: "neo-oxtogen108";
@@ -136,6 +159,10 @@ input {
 	color: #ffffff;
 	font-family: "neo-oxtogen108";
 	font-weight: 400;
+}
+
+.monin{
+	display: none;
 }
 
 .container {
@@ -233,6 +260,9 @@ header ul li a:hover {
 .btn-primary {
 	border-radius: 30px;
 	cursor: pointer;
+	position: relative;
+	left: 30%;
+	
 }
 
 
@@ -369,6 +399,21 @@ h5.partner-title{
 	background: transparent;
 	color: #ffffff;
 	margin-top: 1.875vw;
+	margin-left: -30%;
+}
+
+.right-side-txt2 button {
+	font-family: "proxon";
+	font-size: 1.146vw;
+	font-weight: 400;
+	border: 0.2px solid #ffffff;
+	padding: 0.833vw 2.5vw;
+	border-radius: 1.563vw;
+	background: transparent;
+	color: #ffffff;
+	margin-top: 1.875vw;
+	margin-left: 5%;
+
 }
 
 .right-side-txt {
@@ -882,6 +927,7 @@ footer .btn {
 	display: flex;
 	align-items: center;
 	margin-bottom: 2vw;
+	margin-left: -3%;
 }
 
 footer .copyright {
@@ -890,6 +936,7 @@ footer .copyright {
 	font-weight: 400;
 	color: #ffffff;
 	padding-bottom: 3.542vw;
+	margin-left: 4%;
 }
 
 .only-mob {
@@ -928,10 +975,90 @@ footer .copyright {
 
 	
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
 	.only-mob {
 		display: block;
 	}
+
+	.spider {
+		display: block;
+		max-width: 400px;
+		height: 400px;
+		position: relative;
+		margin: 20px auto;
+	  }
+	  
+	  .spider div {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	  }
+	  
+	  .spider1 {
+		background: url(../img/Animation.png)no-repeat
+		  center;
+		background-size: cover;
+		animation: fade 5s infinite;
+		-webkit-animation: fade 5s infinite;
+	  }
+	  .spider2 {
+		background: url(../img/hover-img.png)no-repeat
+		  center;
+		background-size: cover;
+		animation: fade2 5s infinite;
+		-webkit-animation: fade2 5s infinite;
+	  }
+	  .spider3 {
+		background: url(../img/UI.png)no-repeat
+		  center;
+		background-size: cover;
+		animation: fade3 5s infinite;
+		-webkit-animation: fade3 5s infinite;
+	  }
+	  @keyframes fade {
+		0% {
+		  opacity: 1;
+		}
+		33.333% {
+		  opacity: 0;
+		}
+		66.666% {
+		  opacity: 0;
+		}
+		100% {
+		  opacity: 1;
+		}
+	  }
+	  @keyframes fade2 {
+		0% {
+		  opacity: 0;
+		}
+		33.333% {
+		  opacity: 1;
+		}
+		66.666% {
+		  opacity: 0;
+		}
+		100% {
+		  opacity: 0;
+		}
+	  }
+	  @keyframes fade3 {
+		0% {
+		  opacity: 0;
+		}
+		33.333% {
+		  opacity: 0;
+		}
+		66.666% {
+		  opacity: 1;
+		}
+		100% {
+		  opacity: 0;
+		}
+	  }
+
 
 	.wo-th{
 		margin-top: 10%;
@@ -940,6 +1067,13 @@ footer .copyright {
 		animation-delay: 2s;
 	}
 	
+	.denin{
+		display: none;
+	}
+
+	.monin{
+		display: block;
+	}
 	.content-wrapper {
 		position: absolute;
 		top: 0;
@@ -999,7 +1133,7 @@ footer .copyright {
 	}
 	.right-side-txt1 button {
 		font-family: "proxon";
-		font-size: 5.146vw;
+		font-size: 8.146vw;
 		font-weight: 400;
 		border: 0.2px solid #ffffff;
 		padding: 0.833vw 2.5vw;
@@ -1007,6 +1141,21 @@ footer .copyright {
 		background: transparent;
 		color: #ffffff;
 		margin-top: 3.875vw;
+
+	
+	}
+
+	.right-side-txt2 button {
+		font-family: "proxon";
+		font-size: 1.4rem;
+		font-weight: 400;
+		border: 0.2px solid #ffffff;
+		padding: 0.833vw 2.5vw;
+		border-radius: 50px;
+		background: transparent;
+		color: #ffffff;
+		margin-top: 3.875vw;
+		margin-left: -5%;
 
 	
 	}
@@ -1445,6 +1594,7 @@ footer .copyright {
 
 	.social-icons {
 		margin-bottom: 3rem;
+		margin-left: -15%;
 	}
 
 	.social-icons li a {

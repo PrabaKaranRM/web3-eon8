@@ -15,6 +15,8 @@
 		<link rel="stylesheet" href="assets/css/style.css" />
 
 		<link rel="stylesheet" href="assets/css/intlTelInput.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11015847979"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11015847979'); </script>
 	</head>
 
 	<body>
@@ -132,7 +134,10 @@
 					<span class="close-button closeButton"  >×</span>
 					<h2 class="pop-h">Tell Us What You Need</h2>
 					<p class="dis">Let's discuss your needs and see if we're a good fit.</p>
-					<form action="https://formsubmit.co/praba3024@gmail.com" method="POST" id="mailForm_common3" method="post">
+					<!-- id="mailForm_common3" -->
+					<form action="https://formsubmit.co/praba3024@gmail.com"  method="post">
+						<div class="fo-1">
+						<input type="hidden" name="_cc" value="sales@eonsofttech.in,director@eonsofttech.in,yuvizeon@gmail.com,support@eonsofttech.in,baladm@eon8.com,eonsofttechfb@gmail.com">
 						<input type="text" placeholder="Name" value="" name="Name" class="txt wpcf7-form-control"  required>
 						<input id="phone1" type="tel" placeholder="Phone Number       " name="phone_dummy"   class="phone1"
 						oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
@@ -148,7 +153,9 @@
 							<option value="service">Animation</option>
                             
 						</select>
-							<input type="button" value="GET AN OFFER" data-form="mailForm_common3" class="subm-btn" >
+							
+						<input type="submit" value="GET AN OFFER" data-form="mailForm_common3" class="subm-btn" >
+					</div>
 					</form>
 				</div>
 			</div>
@@ -179,7 +186,7 @@ option{
 	color: white;
 	border: 0.5px solid white;
 	padding: 15px;
-	margin-left: 100px;
+	margin-left: 0px;
 	margin-top: 30px;
 	width: 50%;
 	border-radius: 50px;
@@ -515,16 +522,24 @@ input.txt.wpcf7-form-control {
 														<li><span>→</span><a href="#!">Animated logos</a></li>
 														<li><span>→</span><a href="#!">Advertisement animation</a></li>
 													</ul>
+												
 												</div>
 											</div>
 										</div>
+									
 									</div>
+									
 								</div>
 							</div>
 						</section>
-
+					
 						<section data-anchor="OurWorks" class="section fp-auto-height-responsive
 							fp-noscroll">
+							<div class='spider'>
+								<div class='spider1'></div>
+								<div class='spider2'></div>
+								<div class='spider3'></div>
+							  </div>
 							<div class="fourth-video-rel">
 								<video class="banner-video only-desk" webkit-playsinline
 									poster="assets/videos/desk/Thumbnail/Scene-4-Desktop.jpg" data-autoplay
@@ -567,7 +582,9 @@ input.txt.wpcf7-form-control {
 										</video>
 									</div>
 								</div>
-								<form class="wow fadeInUp" data-wow-delay="2s">
+								<form class="wow fadeInUp" action="https://formsubmit.co/praba3024@gmail.com"  method="post" data-wow-delay="2s">	
+									<div class="fo-1">
+									<input type="hidden" name="_cc" value="sales@eonsofttech.in,director@eonsofttech.in,yuvizeon@gmail.com,support@eonsofttech.in,baladm@eon8.com,eonsofttechfb@gmail.com">
 									<div class="form-group">
 										<input type="text" name="expectation" id="expectation"
 											placeholder="First name" />
@@ -588,6 +605,7 @@ input.txt.wpcf7-form-control {
 											required />
 										<p id="numberErr">Contact number field is required</p>
 									</div>
+								
 									<!-- <div class="form-group">
 										<label for="ZIP-Code" style="display: block; width: 120px;"><img
 												src="ajax/captcha_code.php" /></label>
@@ -595,12 +613,16 @@ input.txt.wpcf7-form-control {
 											placeholder="Please enter captca the above code" type="text" />
 										<p id="captcha_Er">Captcha code is required</p>
 									</div> -->
-									<h6>By continuing, you agree to our <span> Terms of Service </span> and
+									<h6 class="denin">By continuing, you agree to our <span> Terms of Service </span> and
 										<br /> <span>Privacy
 											Policy</span>
 									</h6>
-									<div class="right-side-txt1 btn-space">
-										<button class="btn btn-primary" id="contactSubmit" type="submit">Connect<span></span></button>
+									<h6 class="monin">By continuing, you agree to our <br> Terms of Service and Privacy
+											Policy</span>
+									</h6>
+									<div class="right-side-txt2 btn-space">
+										<button class="btn btn-primary"  type="submit">Connect<span></span></button>
+									</div>
 									</div>
 									<ul class="social-icons">
 										<li><a target="_blank" href="https://www.behance.net/eon8web3labs"
@@ -616,6 +638,8 @@ input.txt.wpcf7-form-control {
 													src="assets/img/logo/fi.svg" alt="fi" /><span class="fiverr"></span></a></li>
 									</ul>
 									<h5 class="copyright">© 2022 EON8 WEB3 STUDIO ALL RIGHTS RESERVED.</h5>
+									
+
 								</form>
 							</div>
 						</footer>
